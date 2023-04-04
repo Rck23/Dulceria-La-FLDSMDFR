@@ -10,13 +10,7 @@
 
 @section('contenido')
     <div class="row">
-        <div class="col-5 p-5 text-center m-2 rounded-2">
-            <form action="{{ route('imagenes') }}" id="dropzone" method="POST" enctype="multipart/form-data"
-                class="dropzone w-100 h-100 rounded border-1 d-flex">
-                @csrf
-            </form>
 
-        </div>
 
         <div class="col-6 p-5 text-center m-2 rounded-2 border">
             <h2 class="mb-3">Crear producto</h2>
@@ -49,4 +43,13 @@
                 </button>
             </form>
         </div>
+
+        <div class="col-5 p-5 text-center m-2 rounded-2">
+            <form action="{{ route('imagenes') }}" id="dropzone" method="POST" enctype="multipart/form-data"
+                class="dropzone w-100 h-100 rounded border-1 d-flex">
+                @csrf
+            </form>
+
+        </div>
+    </div>
     @endsection
